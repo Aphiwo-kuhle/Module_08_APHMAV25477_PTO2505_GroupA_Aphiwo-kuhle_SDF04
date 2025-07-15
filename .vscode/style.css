@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgreen; /* default for desktop */
+}
+
+.footer {
+  background-color: #66988d;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d86733;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #c55420;
+}
+
+.footer-logo {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  color: white;
+}
+
+.logo-code {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.logo-symbol {
+  color: #e07c5b;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0 4px;
+}
+
+.logo-space {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #9b725b;
+  margin-top: 40px;
+}
+
+/* ✅ Media Queries for layout and background colors */
+
+/* Styles for phones */
+@media (max-width: 480px) {
+  body {
+    background-color: pink;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* Styles for tablets (iPads, small laptops) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* Styles for desktops (default) */
+@media (min-width: 769px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-logo {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
