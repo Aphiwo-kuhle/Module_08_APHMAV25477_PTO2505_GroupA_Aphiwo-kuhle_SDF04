@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}z
 
 body {
   font-family: Arial, sans-serif;
@@ -87,7 +87,7 @@ body {
 }
 
 .logo-code {
-  font-weight: 300;
+  font-weight: 300;z
   letter-spacing: 2px;
 }
 
@@ -109,7 +109,7 @@ hr {
   margin-top: 40px;
 }
 
-/* ✅ Media Queries for layout and background colors */
+/*  Media Queries for layout and background colors */
 
 /* Styles for phones */
 @media (max-width: 480px) {
