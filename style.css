@@ -26,6 +26,10 @@ body {
 .footer-section {
   flex: 1 1 250px;
   margin: 20px;
+  .footer-section {
+  margin-bottom: 10px; /* reduce space below */
+}
+
 }
 
 .footer-section h2,
