@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +7,12 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: lightgreen; /* default for desktop */
+  background-color: lightgreen; /* default background */
 }
 
 .footer {
   background-color: #66988d;
-  color: #333;
+  color: black;
   padding: 40px 20px;
 }
 
@@ -26,10 +27,7 @@ body {
 .footer-section {
   flex: 1 1 250px;
   margin: 20px;
-  .footer-section {
-  margin-bottom: 10px; /* reduce space below */
-}
-
+  margin-bottom: 10px;
 }
 
 .footer-section h2,
@@ -47,7 +45,7 @@ body {
 }
 
 .footer-section ul li a {
-  color: #333;
+  color: black;
   text-decoration: none;
 }
 
@@ -55,10 +53,12 @@ body {
   text-decoration: underline;
 }
 
+/* Form styling */
 .footer form {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .footer input[type="email"] {
@@ -82,6 +82,18 @@ body {
   background-color: #c55420;
 }
 
+/* Social icons */
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #d86733;
+}
+
+/* Logo area */
 .footer-logo {
   text-align: left;
   margin-top: 30px;
@@ -113,9 +125,15 @@ hr {
   margin-top: 40px;
 }
 
-/*  Media Queries for layout and background colors */
+/* Visually hidden label (for screen readers) */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
 
-/* Styles for phones */
+/* Media Queries */
+
+/* Phones */
 @media (max-width: 480px) {
   body {
     background-color: pink;
@@ -127,8 +145,8 @@ hr {
   }
 
   .footer-section {
-    margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
   }
 
   .footer-logo {
@@ -137,7 +155,7 @@ hr {
   }
 }
 
-/* Styles for tablets (iPads, small laptops) */
+/* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   body {
     background-color: lightblue;
@@ -149,8 +167,8 @@ hr {
   }
 
   .footer-section {
-    margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
   }
 
   .footer-logo {
@@ -159,7 +177,7 @@ hr {
   }
 }
 
-/* Styles for desktops (default) */
+/* Desktops */
 @media (min-width: 769px) {
   body {
     background-color: lightgreen;
